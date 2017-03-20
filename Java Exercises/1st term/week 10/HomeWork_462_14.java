@@ -19,11 +19,11 @@ public class HomeWork_462_14 {
             word = data.next();
             if (word.equals(dupl)) {
                 count++;
-            } else {
-                if (count > 1) {
+            } else if (count > 1) {
                     System.out.print(dupl + "*" + count + " ");
                     count = 1;
-                }
+            } else {
+                count = 1;
             }
             dupl = word;
         }
