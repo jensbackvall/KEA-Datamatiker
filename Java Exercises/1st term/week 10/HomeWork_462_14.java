@@ -12,11 +12,10 @@ public class HomeWork_462_14 {
 
     public static void printDuplicates(String stuff) throws FileNotFoundException  {
         Scanner data = new Scanner(stuff);
-        String word = "";
         String dupl = "";
         int count = 1;
         while (data.hasNext()) {
-            word = data.next();
+            String word = data.next();
             if (word.equals(dupl)) {
                 count++;
             } else if (count > 1) {
@@ -26,6 +25,10 @@ public class HomeWork_462_14 {
                 count = 1;
             }
             dupl = word;
+        }
+        if (count > 1) {
+            System.out.print(dupl + "*" + count + " ");
+            count = 1;
         }
         System.out.println();
     }
