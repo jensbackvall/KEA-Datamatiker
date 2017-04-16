@@ -65,12 +65,34 @@ public class Point
         }
     }
 
-    // public void flip()
-    // {
-    //     int fx = y;
-    //     y = x;
-    //     setLocation(fx, y);
-    // }
+    public void flip()
+    {
+        if (x <= 0)
+        {
+            x = x + (-x) + (-x);
+        }
+        else
+        {
+            x = -x;
+        }
+
+        if (y <= 0)
+        {
+            y = y + (-y) + (-y);
+        }
+        else
+        {
+            y = -y;
+        }
+        int temp = x;
+        x = y;
+        y = temp;
+    }
+
+    public int manhattanDistance(Point other)
+    {
+        return (x - other.getX()) + (y - other.getY());
+    }
 
 }
 

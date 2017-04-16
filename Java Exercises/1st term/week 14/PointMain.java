@@ -10,6 +10,7 @@ public class PointMain
         Point p5 = new Point(-1, -2);
         Point p6 = new Point(-1, 2);
         Point p7 = new Point(0, 0);
+        Point p8 = new Point(-7, 21);
 
         System.out.println("p1 is " + p1);
         System.out.println("distance from origin = " + p1.distanceFromOrigin());
@@ -29,6 +30,15 @@ public class PointMain
         System.out.println("p6 is in quadrant " + p6.quadrant());
         System.out.println("p7 is in quadrant " + p7.quadrant());
 
-        // System.out.println("p1 is " + p1 + ", but now it has been flipped and is " + p1.flip());
+        System.out.println("p8 is " + p8);
+        p8.flip();
+        System.out.println("p8 has now been flipped and is " + p8);
+
+        System.out.println("p1 is " + p1);
+        System.out.println("p8 is " + p8);
+        System.out.println("The Manhattan distance between p1 and p8 is " + p1.manhattanDistance(p8));
+        System.out.println("p3 is " + p3);
+        System.out.println("p7 is " + p7);
+        System.out.println("The Manhattan distance between p3 and p7 is " + p3.manhattanDistance(p7));
     }
 }
