@@ -94,6 +94,17 @@ public class Point
         return (x - other.getX()) + (y - other.getY());
     }
 
+    public boolean isHorizontal(Point other)
+    {
+        if (y == other.getY())
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+
 }
 
 

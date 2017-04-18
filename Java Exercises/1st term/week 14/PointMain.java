@@ -11,6 +11,8 @@ public class PointMain
         Point p6 = new Point(-1, 2);
         Point p7 = new Point(0, 0);
         Point p8 = new Point(-7, 21);
+        Point p9 = new Point(5, 21);
+        Point p10 = new Point(-6, 21);
 
         System.out.println("p1 is " + p1);
         System.out.println("distance from origin = " + p1.distanceFromOrigin());
@@ -40,5 +42,21 @@ public class PointMain
         System.out.println("p3 is " + p3);
         System.out.println("p7 is " + p7);
         System.out.println("The Manhattan distance between p3 and p7 is " + p3.manhattanDistance(p7));
+
+        if (p9.isHorizontal(p10))
+        {
+            System.out.println("p9 and p10 ARE on the same horizontal axis");
+        } else
+        {
+            System.out.println("p9 and p10 ARE NOT on the same horizontal axis");
+        }
+
+        if (p5.isHorizontal(p6))
+        {
+            System.out.println("p5 and p6 ARE on the same horizontal axis");
+        } else
+        {
+            System.out.println("p5 and p6 ARE NOT on the same horizontal axis");
+        }
     }
 }
