@@ -9,11 +9,11 @@ public class Ticket {
         this.ticketNumber = ticketNumber;
     }
 
-    public int getNumber(){
+    public int getNumber() {
         return ticketNumber;
     }
 
-    public double getPrice(){
+    public double getPrice() {
         return 50.0;
     }
 
@@ -22,6 +22,6 @@ public class Ticket {
     }
 
     public void printTicket(){
-        System.out.println("Event: " + getName() + ", Price: " + getPrice() + " $ - Ticket number: " + getNumber());
+        System.out.println("Event: " + getName() + ", Price: $" + getPrice() + ", Ticket number: " + getNumber());
     }
 }
