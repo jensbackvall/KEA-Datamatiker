@@ -24,7 +24,6 @@ public class TV {
             printCurrentState();
         } else {
             System.out.println("Kanalen skal være fra 1 t.o.m. 120");
-            printCurrentState();
         }
     }
 
@@ -88,7 +87,7 @@ public class TV {
             System.out.println("Kanalen er: " + channel);
             System.out.println("Volumeniveauen er: " + volumeLevel);
         } else {
-            System.out.println("Fjernsynet er slukket, tænd det først for at bruge det!");
+            System.out.println("Fjernsynet er slukket!");
         }
 
     }

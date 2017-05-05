@@ -18,7 +18,7 @@ public class ticketTest {
         StudentAdvanceTicket sat1 = new StudentAdvanceTicket(4, 9);
         sat1.printTicket();
 
-        StudentAdvanceTicket sat2 = new StudentAdvanceTicket(7, 2StudentA2);
+        StudentAdvanceTicket sat2 = new StudentAdvanceTicket(7, 78);
         sat2.printTicket();
     }
 }
